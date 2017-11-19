@@ -1,7 +1,7 @@
 package com.dotridge.bean;
 
 import java.io.Serializable;
-
+//created by User:sagar
 public class HospitalBean implements Serializable {
 
 	private static final long serialVersionUID = 157245513233829157L;

@@ -2,6 +2,8 @@ package com.dotridge.bean;
 
 import java.io.Serializable;
 
+
+//this is admin bean
 public class AdminBean implements Serializable {
 
 	private static final long serialVersionUID = 6083941016563604131L;

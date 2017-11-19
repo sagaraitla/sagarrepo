@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<definition name="SuperAdminBaseLayout" template="/WEB-INF/views/superadmin/baseLayout.jsp">
+<put-attribute name="header" value="/WEB-INF/views/superadmin/header.jsp"></put-attribute>
+<put-attribute name="footer" value="/WEB-INF/views/superadmin/footer.jsp"></put-attribute>
+<put-attribute name="menu" value="/WEB-INF/views/superadmin/menu.jsp"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/superadmin/body.jsp"></put-attribute>
+</definition>
+<definition name="getSuperAdminBoard" extends="SuperAdminBaseLayout"/>
+
+<definition name="getHospitalBoard" extends="SuperAdminBaseLayout">
+ <put-attribute name="body" value="/WEB-INF/views/superadmin/hospitalBoard.jsp"/>
+</definition>
+
+<definition name="addHospitalFormDef" extends="SuperAdminBaseLayout">
+<put-attribute name="body" value="/WEB-INF/views/superadmin/addHospital.jsp"/>
+<!-- <put-attribute name="header" value="/WEB-INF/views/superadmin/header.jsp"/> -->
+</definition>
+
+<definition name="editHospitalBoard" extends="SuperAdminBaseLayout">
+ <put-attribute name="body" value="/WEB-INF/views/superadmin/editHospital.jsp"/>
+</definition>
+
+<!-- Admins  -->
+
+<definition name="getAdminBoard" extends="SuperAdminBaseLayout">
+ <put-attribute name="body" value="/WEB-INF/views/superadmin/adminBoard.jsp"/>
+</definition>
+
+<definition name="addAdminFormDef" extends="SuperAdminBaseLayout">
+<put-attribute name="body" value="/WEB-INF/views/superadmin/addAdmin.jsp"/>
+<!-- <put-attribute name="header" value="/WEB-INF/views/superadmin/header.jsp"/> -->
+</definition>
+
+<definition name="editAdminBoard" extends="SuperAdminBaseLayout">
+ <put-attribute name="body" value="/WEB-INF/views/superadmin/editAdmin.jsp"/>
+</definition>
+
+</tiles-definitions>
+

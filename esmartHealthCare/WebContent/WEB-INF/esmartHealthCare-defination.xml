@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<definition name="baseLayout" template="/WEB-INF/views/base_layout.jsp">
+<put-attribute name="header" value="/WEB-INF/views/header.jsp"></put-attribute>
+<put-attribute name="body" value=""></put-attribute>
+<put-attribute name="footer" value="/WEB-INF/views/footer.jsp"></put-attribute>
+</definition>
+
+<!-- Home page -->
+<definition name="getHome" extends="baseLayout">
+<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+</definition>
+
+<!-- signup page -->
+<definition name="getSignup" extends="baseLayout">
+<put-attribute name="body" value="/WEB-INF/views/signup.jsp"></put-attribute>
+</definition>
+<!-- success page -->
+<definition name="success" extends="baseLayout">
+<put-attribute name="body" value="/WEB-INF/views/result.jsp"></put-attribute>
+</definition>
+
+
+<!-- login page -->
+<definition name="login" extends="baseLayout">
+<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+</definition>
+</tiles-definitions>
